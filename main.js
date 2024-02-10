@@ -39,7 +39,7 @@ userInput.addEventListener("keypress", function(event) {
 
 function makeRanNum(){
     ranNum = Math.floor(Math.random()*100)+1;
-    console.log(ranNum)
+    console.log("정답 : ",ranNum, "//테스트코드이지만 편의를 위해 남겨둠.")
 }
 
 function play(){
@@ -82,14 +82,15 @@ function play(){
     }
 }
 
-function reset(){
+function reset() {
     gameover = false;
     clickBtn.disabled = false;
-    chances = 5
-    history = [];
-    userInput.value="";
-    resultArea.innerText = "결과가 나오는 곳"
-    chanceArea.innerText = "5번의 기회가 남았습니다."
+    chances = 5;
+    history = []; 
+    userInput.value = "";
+    resultArea.innerText = "결과가 나오는 곳";
+    chanceArea.innerText = "5번의 기회가 남았습니다.";
 }
+
 
 makeRanNum()
