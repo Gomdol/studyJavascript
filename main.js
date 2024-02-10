@@ -64,6 +64,7 @@ function play(){
         resultArea.innerText = "Down"
     }else if(userNum == ranNum){
         resultArea.innerText = "정답입니다."
+        gameover = true;
     }
     chances--;
     chanceArea.innerText = `${chances}번의 기회가 남았습니다.`
